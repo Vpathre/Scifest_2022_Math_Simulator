@@ -1,0 +1,58 @@
+///////////////////////////////////////////////////////////////////
+
+//Define three points for your triangle.
+//Enter the points as a point on the cartesian plane: {x, y}.
+function generateTriangle(){
+var pointA = {150, 150};
+var pointB = {150, 350};
+var pointC = {550, 350};
+
+//Enable the drawing feature below by making it "true".
+//Connect the dots to form a triangle.
+var drawEnable = true;
+
+//Set the movePoints variable to "true".
+//This will illustrate how the triangle reacts to changes.
+var movePoints = true;
+}
+
+
+//////////////////////////////////////////////////////////////////
+
+//Define three points for your triangle.
+//Enter the points as a point on the cartesian plane: {x, y}.
+function generateTriangle(){
+var pointA = {350, 150};
+var pointB = {150, 350};
+var pointC = {550, 350};
+
+//Enable the drawing feature below by making it "true".
+//Connect the dots to form a triangle.
+var drawEnable = true;
+
+//Set the movePoints variable to "true".
+//This will illustrate how the triangle reacts to changes.
+var movePoints = true;
+}
+
+//////////////////////////////////////////////////////////////////
+
+//Define three points for your triangle.
+//Enter the points as a point on the cartesian plane: {x, y}.
+function generateTriangle(){
+var pointA = {225, 133};
+var pointB = {100, 350};
+var pointC = {350, 350};
+
+//Enable the drawing feature below by making it "true".
+//Connect the dots to form a triangle.
+var drawEnable = true;
+
+//Set the movePoints variable to "true".
+//This will illustrate how the triangle reacts to changes.
+var movePoints = true;
+}
+
+//////////////////////////////////////////////////////////////////
+
+shift(X+100);

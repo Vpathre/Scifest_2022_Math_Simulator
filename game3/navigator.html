@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+        integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Resolute Math Simulator</title>
+    <link rel="stylesheet" href="style_navigator.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- left side menu  -->
+            <div class="left-side-menu">
+                <div class="logo">
+                    <a href="/index.html">
+                        <img src="/web_assets/logo1.png" alt="logo" />
+                    </a>
+                </div>
+                <h1 class="head" style="color: black; font-size: xx-large; text-align: center;">Fraction Master</h1>
+            </div>
+
+            <div class="right-side">
+                <!-- <a href="index.html">
+                        <li>Space Traveller</li>
+                    </a>
+                    <a href="#section-two">
+                        <li>Triangle Classifier</li>
+                    </a>
+                    <a href="#section-third">
+                        <li>Fraction Shooter</li>
+                    </a>
+                    <a href="#section-five">
+                        <li>Platformer</li>
+                    </a> -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- ---------------------------------------------------------------------- -->
+    <section class="section-third" id="section-third">
+        <h2>Select a level</h2>
+        <div class="section-third-task">
+            <a href="./level1.html">
+                <div class="task-1">
+                    <img src="./web/icon_forest.png" alt="icon1" />
+                    <h3>Level 1: Forest</h3>
+                    <p style="color: black;">
+                        Navigate through the sunny forest and help Harold solve the fraction!
+                    </p>
+                </div>
+            </a>
+
+            <a href="./level2.html">
+                <div class="task-2" onclick="load2();">
+                    <img src="./web/icon_ice.png" alt="icon2" />
+                    <h3>Level 2: Winterland</h3>
+                    <p style="color: black;">
+                        It's winter and Harold is determined to reach his goal...be careful though, the ice is slippery!
+                    </p>
+                </div>
+            </a>
+
+            <a href="./level3.html">
+                <div class="task-3" onclick="load3();">
+                    <img src="./web/icon_candy.png" alt="icon3" />
+                    <h3>Level 3: Candy Kingdom</h3>
+                    <p style="color: black;">
+                        The Candy Kingdom is as beautiful as it is dangerous! Help Harold get to his goal...be aware:
+                        the
+                        ground might slip from under your feet!
+                    </p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+
+</html>
