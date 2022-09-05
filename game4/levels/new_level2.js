@@ -69,38 +69,38 @@ class Level_2 extends Phaser.Scene {
     }
 
     preload() {
-        this.load.audio('theme2', '../assets/HappyLoops/HappyLoops/not-really-lost.wav');
-        this.load.audio('plus_sound', '../assets/HappyLoops/Cancel_1.wav');
-        this.load.audio('minus_sound', '../assets/HappyLoops/Confirm_1.wav');
-        this.load.audio('mult_sound', '../assets/HappyLoops/Select_1.wav');
-        this.load.audio('divide_sound', '../assets/HappyLoops/Text_1.wav');
-        this.load.audio('jump_sound', '../assets/HappyLoops/Jump_1.wav');
-        this.load.audio('hit_sound', '../assets/HappyLoops/collect_number.wav');
-        this.load.audio('gate_sound', '../assets/HappyLoops/Open_gate.wav');
-        this.load.image('red', '../assets/red.png');
-        this.load.image('background', '../assets/Platformer/Mushroom expansion/Backgrounds/bg_grasslands.png');
-        this.load.image('cloud1', '../assets/Platformer/Base Pack/Items/cloud1.png');
-        this.load.image('cloud2', '../assets/Platformer/Base Pack/Items/cloud2.png');
-        this.load.image('cloud3', '../assets/Platformer/Base Pack/Items/cloud3.png');
-        this.load.image('left', '../assets/Platformer/Ice expansion/Tiles/tundraLeft.png');
-        this.load.image('mid', '../assets/Platformer/Ice expansion/Tiles/tundraMid.png');
-        this.load.image('right', '../assets/Platformer/Ice expansion/Tiles/tundraRight.png');
-        this.load.image('tree1', '../assets/Platformer/Ice expansion/Tiles/pineSapling.png');
-        this.load.image('tree2', '../assets/Platformer/Ice expansion/Tiles/pineSaplingAlt.png');
-        this.load.image('dead_tree', '../assets/Platformer/Ice expansion/Tiles/deadTree.png');
-        this.load.image('green_cane', '../assets/Platformer/Ice expansion/Tiles/caneGreenSmall.png');
-        this.load.image('snowball', '../assets/Platformer/Ice expansion/Tiles/snowBallBigGround.png');
-        this.load.image('mud', '../assets/Platformer/Ice expansion/Tiles/tundraCenter.png');
-        this.load.image('brick_platform', '../assets/Platformer/Ice expansion/Tiles/igloo.png');
-        this.load.image('small_bricks', '../assets/Platformer/Ice expansion/Tiles/iceBlock.png');
-        this.load.image('plus', '../assets/plus.png');
-        this.load.image('minus', '../assets/minus.png');
-        this.load.image('multiply', '../assets/multiply.png');
-        this.load.image('divide', '../assets/divide.png');
-        this.load.image("particle", "../assets/particle.png");
-        this.load.image('exit_sign', '../assets/Platformer/Base Pack/Tiles/signExit.png')
-        this.load.image('snow', '../assets/White.png');
-        this.load.spritesheet('player', '../assets/Platformer/Base pack/Player/p3_spritesheet.png', {
+        this.load.audio('theme2', './assets/HappyLoops/HappyLoops/not-really-lost.wav');
+        this.load.audio('plus_sound', './assets/HappyLoops/Cancel_1.wav');
+        this.load.audio('minus_sound', './assets/HappyLoops/Confirm_1.wav');
+        this.load.audio('mult_sound', './assets/HappyLoops/Select_1.wav');
+        this.load.audio('divide_sound', './assets/HappyLoops/Text_1.wav');
+        this.load.audio('jump_sound', './assets/HappyLoops/Jump_1.wav');
+        this.load.audio('hit_sound', './assets/HappyLoops/collect_number.wav');
+        this.load.audio('gate_sound', './assets/HappyLoops/Open_gate.wav');
+        this.load.image('red', './assets/red.png');
+        this.load.image('background', './assets/Platformer/Mushroom expansion/Backgrounds/bg_grasslands.png');
+        this.load.image('cloud1', './assets/Platformer/Base Pack/Items/cloud1.png');
+        this.load.image('cloud2', './assets/Platformer/Base Pack/Items/cloud2.png');
+        this.load.image('cloud3', './assets/Platformer/Base Pack/Items/cloud3.png');
+        this.load.image('left', './assets/Platformer/Ice expansion/Tiles/tundraLeft.png');
+        this.load.image('mid', './assets/Platformer/Ice expansion/Tiles/tundraMid.png');
+        this.load.image('right', './assets/Platformer/Ice expansion/Tiles/tundraRight.png');
+        this.load.image('tree1', './assets/Platformer/Ice expansion/Tiles/pineSapling.png');
+        this.load.image('tree2', './assets/Platformer/Ice expansion/Tiles/pineSaplingAlt.png');
+        this.load.image('dead_tree', './assets/Platformer/Ice expansion/Tiles/deadTree.png');
+        this.load.image('green_cane', './assets/Platformer/Ice expansion/Tiles/caneGreenSmall.png');
+        this.load.image('snowball', './assets/Platformer/Ice expansion/Tiles/snowBallBigGround.png');
+        this.load.image('mud', './assets/Platformer/Ice expansion/Tiles/tundraCenter.png');
+        this.load.image('brick_platform', './assets/Platformer/Ice expansion/Tiles/igloo.png');
+        this.load.image('small_bricks', './assets/Platformer/Ice expansion/Tiles/iceBlock.png');
+        this.load.image('plus', './assets/plus.png');
+        this.load.image('minus', './assets/minus.png');
+        this.load.image('multiply', './assets/multiply.png');
+        this.load.image('divide', './assets/divide.png');
+        this.load.image("particle", "./assets/particle.png");
+        this.load.image('exit_sign', './assets/Platformer/Base Pack/Tiles/signExit.png')
+        this.load.image('snow', './assets/White.png');
+        this.load.spritesheet('player', './assets/Platformer/Base pack/Player/p3_spritesheet.png', {
             frameWidth: 72.57,
             frameHeight: 92
         });
