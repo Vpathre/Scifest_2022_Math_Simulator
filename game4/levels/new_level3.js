@@ -106,7 +106,7 @@ class Level_3 extends Phaser.Scene {
         this.load.image('minus', './assets/minus.png');
         this.load.image('multiply', './assets/multiply.png');
         this.load.image('divide', './assets/divide.png');
-        this.load.image("particle", "../assets/particle.png");
+        this.load.image("particle", "./assets/particle.png");
         this.load.image('exit_sign', './assets/Platformer/Candy expansion/Tiles/canePinkSmall.png')
         this.load.spritesheet('player', './assets/Platformer/Base pack/Player/p3_spritesheet.png', {
             frameWidth: 72.57,
