@@ -79,9 +79,9 @@ class Level_2 extends Phaser.Scene {
         this.load.audio('gate_sound', './assets/HappyLoops/Open_gate.wav');
         this.load.image('red', './assets/red.png');
         this.load.image('background', './assets/Platformer/Mushroom expansion/Backgrounds/bg_grasslands.png');
-        this.load.image('cloud1', './assets/Platformer/Base Pack/Items/cloud1.png');
-        this.load.image('cloud2', './assets/Platformer/Base Pack/Items/cloud2.png');
-        this.load.image('cloud3', './assets/Platformer/Base Pack/Items/cloud3.png');
+        this.load.image('cloud1', './assets/Platformer/Base pack/Items/cloud1.png');
+        this.load.image('cloud2', './assets/Platformer/Base pack/Items/cloud2.png');
+        this.load.image('cloud3', './assets/Platformer/Base pack/Items/cloud3.png');
         this.load.image('left', './assets/Platformer/Ice expansion/Tiles/tundraLeft.png');
         this.load.image('mid', './assets/Platformer/Ice expansion/Tiles/tundraMid.png');
         this.load.image('right', './assets/Platformer/Ice expansion/Tiles/tundraRight.png');
@@ -98,8 +98,8 @@ class Level_2 extends Phaser.Scene {
         this.load.image('multiply', './assets/multiply.png');
         this.load.image('divide', './assets/divide.png');
         this.load.image("particle", "./assets/particle.png");
-        this.load.image('exit_sign', './assets/Platformer/Base Pack/Tiles/signExit.png')
-        this.load.image('snow', './assets/White.png');
+        this.load.image('exit_sign', './assets/Platformer/Base pack/Tiles/signExit.png')
+        this.load.image('snow', './assets/white.png');
         this.load.spritesheet('player', './assets/Platformer/Base pack/Player/p3_spritesheet.png', {
             frameWidth: 72.57,
             frameHeight: 92

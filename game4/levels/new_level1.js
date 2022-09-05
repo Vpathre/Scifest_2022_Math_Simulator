@@ -89,8 +89,8 @@ class Level_1 extends Phaser.Scene {
         this.load.image('tan_tall', './assets/Platformer/Mushroom expansion/PNG/tallShroom_tan.png');
         this.load.image('brown_short', './assets/Platformer/Mushroom expansion/PNG/tinyShroom_brown.png');
         this.load.image('mushroom_bush', './assets/Platformer/Mushroom expansion/PNG/bush.png');
-        this.load.image('brick_platform', './assets/Platformer/Base Pack/Tiles/castleHalf.png');
-        this.load.image('small_bricks', './assets/Platformer/Base Pack/Tiles/brickWall.png');
+        this.load.image('brick_platform', './assets/Platformer/Base pack/Tiles/castleHalf.png');
+        this.load.image('small_bricks', './assets/Platformer/Base pack/Tiles/brickWall.png');
         this.load.image('plant', './assets/Platformer/Base pack/Items/plant.png');
         this.load.image('cactus', './assets/Platformer/Base pack/Items/cactus.png');
         this.load.image('pp_plant', './assets/Platformer/Base pack/Items/plantPurple.png');
@@ -101,7 +101,7 @@ class Level_1 extends Phaser.Scene {
         this.load.image('multiply', './assets/multiply.png');
         this.load.image('divide', './assets/divide.png');
         this.load.image("particle", "./assets/particle.png");
-        this.load.image('exit_sign', './assets/Platformer/Base Pack/Tiles/signExit.png')
+        this.load.image('exit_sign', './assets/Platformer/Base pack/Tiles/signExit.png')
         this.load.image('snow', './assets/White.png');
         this.load.spritesheet('player', './assets/Platformer/Base pack/Player/p1_spritesheet.png', {
             frameWidth: 72.57,
