@@ -7,7 +7,7 @@ canvas {
   z-index: 1;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(90, 90, 90, 0.75);
   background-size: 25px 25px;
   background-image:
     linear-gradient(to right, #6f6f6f 1px, transparent 1px),
@@ -90,19 +90,21 @@ h3 {
 
 .int_buttons {
   padding: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
   font-size: 16px;
   color: #ffffff;
   background-color: blue;
-  border: 2px solid white;
+  border: 2px solid rgba(0, 0, 255, 0.881);
   border-radius: 10px;
   cursor: pointer;
   transition: 0.4s;
+  margin-left: 25%;
   /* display: inline-block; */
 }
 
 .int_buttons:hover {
+  transform: scale(1.1);
   background: darkblue;
   border: 2px solid oldlace;
   color: oldlace;
@@ -117,7 +119,9 @@ h3 {
 
 
 body {
-  background-image: url('assets/background.jpg');
+  background-image: url('./assets/background.jpg');
+  background-size: 100%;
+
 }
 
 .container {
@@ -131,11 +135,11 @@ body {
 
 .modal_body_content {
   position: fixed;
-  top: 100px;
+  top: 8rem;
   background-color: white;
   right: 0;
   left: 0;
-  width: 60%;
+  width: 40%;
   margin: 0 auto;
   padding: 50px;
   padding-top: 25px;
@@ -176,8 +180,14 @@ body {
 
 .img-container {
   float: left;
-  width: 33.33%;
+  width: 33.3%;
   padding: 5px;
+}
+
+.text_container {
+  width: 15rem;
+  position: absolute;
+  right: 3rem;
 }
 
 .clearfix::after {
@@ -230,6 +240,14 @@ body {
 .tri_type {
   color: whitesmoke;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+  position: relative;
+  left: 30%;
+}
+
+#sides,
+#angles {
+  position: relative;
+  left: 42%;
 }
 
 /*******************************************************************
@@ -314,4 +332,22 @@ input[type="range"]::-webkit-slider-runnable-track {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   -webkit-appearance: none;
+}
+
+#loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  overflow: visible;
+  background-color: rgba(2, 116, 168, 0.8);
+  top: 0;
+  left: 0;
+}
+
+#loader-wrapper {
+  top: 30%;
+  display: absolute;
+  padding-left: 40%;
+  padding-top: 15%;
 }

@@ -18,7 +18,7 @@ var selectedCircle;
 var delta_x;
 var delta_y;
 var str =
-  '//Define three points for your triangle.\n//Enter the points as a point on the cartesian plane: {x, y}.\nfunction generateTriangle(){\nvar pointA = {, }\nvar pointB = {, }\nvar pointC = {, }\n\n//Enable the drawing feature below by making it "true".\n//Connect the dots to form a triangle.\nvar drawEnable = false;\n\n//Set the movePoints variable to "true".\n//This will illustrate how the triangle reacts to changes.\nvar movePoints = false;\n}';
+  '//Define three points for your triangle.\n//Enter the points as a point on the cartesian plane: {x, y}.\n//An example triangle has been written for you :)\nfunction generateTriangle(){\nvar pointA = {150, 150};\nvar pointB = {150, 350};\nvar pointC = {550, 350};\n\n//Enable the drawing feature below by making it "true".\n//Connect the dots to form a triangle.\nvar drawEnable = true;\n\n//Set the movePoints variable to "true".\n//This will illustrate how the triangle reacts to changes.\nvar movePoints = true;\n}';
 
 var code = ".codemirror-textarea" [0];
 var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
@@ -49,6 +49,8 @@ canvas.addEventListener('touchend', stopLine);
 
 document.getElementById("angles").innerHTML = "N/A";
 document.getElementById("sides").innerHTML = "N/A";
+
+
 
 input.addEventListener("input", (event) => {
   const value = Number(input.value) / 100;
@@ -389,9 +391,9 @@ function error_window(state, type) {
 //fetch codeMirror code
 function generate_triangle() {
   var doc = editor.getDoc();
-  var d1 = doc.getLine(3);
-  var d2 = doc.getLine(4);
-  var d3 = doc.getLine(5);
+  var d1 = doc.getLine(4);
+  var d2 = doc.getLine(5);
+  var d3 = doc.getLine(6);
 
   // get point coordinates
   var d1_arr = [
@@ -419,8 +421,8 @@ function generate_triangle() {
 // deals with boolean variables
 function get_truth() {
   var doc = editor.getDoc();
-  var draw = doc.getLine(9);
-  var moveDot = doc.getLine(13);
+  var draw = doc.getLine(10);
+  var moveDot = doc.getLine(14);
 
   draw = String(draw).slice(17, String(draw).length);
   moveDot = String(moveDot).slice(17, String(moveDot).length);

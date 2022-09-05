@@ -7,7 +7,7 @@ canvas {
   z-index: 1;
   border: 1px solid black;
   border-radius: 8px;
-  background-color: rgba(241, 241, 241, 0.5);
+  background-color: rgba(222, 222, 222, 0.5);
   /* background-color: rgb(241, 241, 241); */
   background-size: 25px 25px;
   background-image:
@@ -94,10 +94,19 @@ h3 {
   padding-left: 20px;
   font-size: 16px;
   color: white;
-  background-color: blue;
-  border: 2px solid white;
+  background-color: rgba(0, 0, 255, 0.881);
+  border: 2px solid rgba(0, 0, 255, 0.881);
   border-radius: 10px;
-  cursor: pointer
+  cursor: pointer;
+  transition: all 0.4s;
+  /* display: inline-block; */
+}
+
+.int_buttons:hover {
+  transform: scale(1.1);
+  background: darkblue;
+  border: 2px solid oldlace;
+  color: oldlace;
 }
 
 .input_commands {
@@ -109,7 +118,8 @@ h3 {
 
 
 body {
-  background-image: url('assets/background.jpg');
+  background-image: url('./assets/background.jpg');
+  background-size: 100%;
 }
 
 .container {
@@ -195,4 +205,22 @@ body {
 
 .add:hover {
   background: #bbb;
+}
+
+#loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  overflow: visible;
+  background-color: rgba(2, 116, 168, 0.8);
+  top: 0;
+  left: 0;
+}
+
+#loader-wrapper {
+  top: 30%;
+  display: absolute;
+  padding-left: 40%;
+  padding-top: 15%;
 }

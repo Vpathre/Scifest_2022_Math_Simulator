@@ -19,13 +19,13 @@ body {
 
 h1,
 h2 {
-    font-family: Avenir LT Std;
+    font-family: Poppins;
     color: var(--main-color);
 }
 
 h4,
 h3 {
-    font-family: "muli";
+    font-family: Poppins;
     color: var(--main-color);
 }
 
@@ -40,7 +40,7 @@ p,
 a,
 li,
 button {
-    font-family: "muli";
+    font-family: Poppins;
     color: var(--primry-color);
 }
 
@@ -533,6 +533,24 @@ header .right-side-menu .sub-menu a li:hover {
 .section-third .section-third-task .task-4:hover>img {
     transform: scale(1.2);
     ;
+}
+
+#loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    overflow: visible;
+    background-color: rgba(2, 116, 168, 0.8);
+    top: 0;
+    left: 0;
+}
+
+#loader-wrapper {
+    top: 30%;
+    display: absolute;
+    padding-left: 40%;
+    padding-top: 15%;
 }
 
 /* ------------------- our 4th section  css style

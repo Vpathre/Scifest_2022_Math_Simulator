@@ -346,6 +346,7 @@ class Level_2 extends Phaser.Scene {
 
         ball = this.matter.add.sprite(260, 45, "player").setScale(0.8, 0.8); //make player1 body with physics enabled
         ball.fstatic = 0.5;
+        ball.setFriction(0.001);
         // ball.setTint(0x40C496);
 
         // create character and animations
@@ -789,9 +790,9 @@ class Level_2 extends Phaser.Scene {
                 globalCounter++;
             }
             if (ball_obj.y > 460 && ball_obj.x < 375 + 60 && ball_obj.x > 375 - 60) {
-                // alert("Game Over");
-                music.stop();
-                // this.scene.start("Level_2");
+                document.getElementById("welcome_modal").style.display = "block";
+                document.getElementById("welcome_part").style.display = "none";
+                document.getElementById("success_part").style.display = "block";
             }
         }
     }

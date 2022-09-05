@@ -773,10 +773,10 @@ class Level_3 extends Phaser.Scene {
                 this.destroyPlatform(gate);
                 globalCounter++;
             }
-            if (ball_obj.y > 460 && ball_obj.x < 375 + 60 && ball_obj.x > 375 - 60) {
-                // alert("Game Over");
-                music.stop();
-                // this.scene.start("Level_2");
+            if (ball_obj.y > 460 && ball_obj.x < 660 && ball_obj.x > 600) {
+                document.getElementById("welcome_modal").style.display = "block";
+                document.getElementById("welcome_part").style.display = "none";
+                document.getElementById("success_part").style.display = "block";
             }
         }
     }

@@ -6,7 +6,7 @@
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>Math Simulator</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./style1.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -58,27 +58,107 @@
 </head>
 
 <body>
-    <div>
-        <h1 style="top:20px; padding-top:10px;padding-left:55px;color:white;">Solve the puzzle</h1>
-        <canvas id="canvas" width="750" height="600"></canvas>
-        <div class="buttons">
-            <div id="blockly">
-                <button style="margin-right:10px;" class="int_buttons" id="reset_button">Reset</button>
-                <a href="./navigator.html"><button style="margin-left:1.5rem;" class=" int_buttons">Exit</button></a>
-                <script src="./blockly_editor.js"></script>
-            </div>
+    <div id="loader">
+        <div id="loader-wrapper">
+            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_Nwbhyq.json" background="transparent"
+                speed="1" style="width: 30rem; height: 30rem;" loop autoplay>
+            </lottie-player>
         </div>
     </div>
-    <img class="res_logo" src="assets/resolute-logo.png" />
-    <div style="display:none;" id="error_popup_id" class="error_popup">
-        <span onclick="error_window('close');" class="close_x">x</span>
-        <p id="err_msg" class="error_text"></p>
+    <div id="content">
+        <div>
+            <h1 style="top:20px; padding-top:10px;padding-left:55px;color:white;">Solve the puzzle to get
+                <sup>1</sup>&frasl;<sub>4</sub></h1>
+            <canvas id="canvas" width="750" height="600"></canvas>
+            <div class="buttons">
+                <div id="blockly">
+                    <button style="margin-right:10px;" class="int_buttons" id="reset_button">Reset</button>
+                    <a href="./navigator.html"><button style="margin-left:1.5rem;"
+                            class=" int_buttons">Exit</button></a>
+                    <script src="./blockly_editor.js"></script>
+                </div>
+            </div>
+        </div>
+        <div id="welcome_modal" class="modal">
+            <div class="modal_body_content">
+                <div align="center">
+                    <div id="welcome_part">
+                        <h1>A Journey Through the Forest</h1>
+                        <div class="clearfix">
+                            <div class="img-container" style="position: relative; right: 3rem;">
+                                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_5szujujo.json"
+                                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                                    autoplay></lottie-player>
+                            </div>
+                            <div class="img-container">
+                                <p class="story" align="left">As Harold starts his journey of becoming the Fraction
+                                    Master, he comes across a forest through which he must navigate in order to move on.
+                                </p>
+                                <p class="story" align="left">Help Harold on this adventure by using the arrow keys!
+                                    <br>
+                                    TIP: Hold the UP key to double jump!</p>
+                            </div>
+                            <div class="img-container">
+                                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_rwxyvqzx.json"
+                                    background="transparent" speed="1" style="width: 18rem; height: 18rem;" loop
+                                    autoplay>
+                                </lottie-player>
+                            </div>
+                        </div>
+                        </br>
+                        <button onclick="document.getElementById('welcome_modal').style.display = 'none';"
+                            class="int_buttons">OKAY! I GOT IT</button>
+                    </div>
+                    <div style="display:none;" id="success_part">
+                        <h1><u>CONGRATULATIONS</u></h1>
+                        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_IsDili0ACB.json"
+                            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                        </lottie-player>
+                        <br>
+                        <button onclick="location.reload();" class="int_buttons">Play Again?</button>
+                        <a href="../index.html"><button style="margin-left:1.5rem;" class=" int_buttons">Main
+                                Menu</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="../index.html">
+            <img src="./assets/resolute-logo.png" class="res_logo" alt="logo" />
+        </a>
+        <div style="display:none;" id="error_popup_id" class="error_popup">
+            <span onclick="error_window('close');" class="close_x">x</span>
+            <p id="err_msg" class="error_text"></p>
+        </div>
     </div>
     <!-- <script>
         var workspace = Blockly.inject('blockly', {
             toolbox: toolbox
         });
     </script> -->
+    <script>
+        var loader;
+
+        function loadNow(alpha) {
+            if (alpha <= 0) {
+                displayContent();
+            } else {
+                loader.style.opacity = alpha;
+                window.setTimeout(function () {
+                    loadNow(alpha - 0.2);
+                }, 100);
+            }
+        }
+
+        function displayContent() {
+            loader.style.display = 'none';
+            document.getElementById('content');
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loader = document.getElementById('loader');
+            loadNow(1);
+        })
+    </script>
     <script>
         var questions_array = [];
         const DEG_RAD = Math.PI / 180;
