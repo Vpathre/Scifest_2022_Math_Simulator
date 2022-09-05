@@ -68,42 +68,42 @@ class Level_1 extends Phaser.Scene {
     }
 
     preload() {
-        this.load.audio('theme', './assets/HappyLoops/HappyLoops/intro.wav');
-        this.load.audio('plus_sound', './assets/HappyLoops/Cancel_1.wav');
-        this.load.audio('minus_sound', './assets/HappyLoops/Confirm_1.wav');
-        this.load.audio('divide_sound', './assets/HappyLoops/Select_1.wav');
-        this.load.audio('jump_sound', './assets/HappyLoops/Jump_1.wav');
-        this.load.audio('hit_sound', './assets/HappyLoops/collect_number.wav');
-        this.load.audio('gate_sound', './assets/HappyLoops/Open_gate.wav');
-        this.load.image('red', './assets/red.png');
-        this.load.image('background', './assets/Platformer/Base pack/bg.png');
-        this.load.image('cloud1', './assets/Platformer/Base pack/Items/cloud1.png');
-        this.load.image('cloud2', './assets/Platformer/Base pack/Items/cloud2.png');
-        this.load.image('cloud3', './assets/Platformer/Base pack/Items/cloud3.png');
-        this.load.image('left', './assets/Platformer/Base pack/Tiles/grassLeft.png');
-        this.load.image('mid', './assets/Platformer/Base pack/Tiles/grassMid.png');
-        this.load.image('right', './assets/Platformer/Base pack/Tiles/grassRight.png');
-        this.load.image('mud', './assets/Platformer/Base pack/Tiles/grassCenter.png');
-        this.load.image('brown_tall', './assets/Platformer/Mushroom expansion/PNG/tallShroom_brown.png');
-        this.load.image('red_tall', './assets/Platformer/Mushroom expansion/PNG/tallShroom_red.png');
-        this.load.image('tan_tall', './assets/Platformer/Mushroom expansion/PNG/tallShroom_tan.png');
-        this.load.image('brown_short', './assets/Platformer/Mushroom expansion/PNG/tinyShroom_brown.png');
-        this.load.image('mushroom_bush', './assets/Platformer/Mushroom expansion/PNG/bush.png');
-        this.load.image('brick_platform', './assets/Platformer/Base Pack/Tiles/castleHalf.png');
-        this.load.image('small_bricks', './assets/Platformer/Base Pack/Tiles/brickWall.png');
-        this.load.image('plant', './assets/Platformer/Base pack/Items/plant.png');
-        this.load.image('cactus', './assets/Platformer/Base pack/Items/cactus.png');
-        this.load.image('pp_plant', './assets/Platformer/Base pack/Items/plantPurple.png');
-        this.load.image('bush', './assets/Platformer/Base pack/Items/bush.png');
-        this.load.image('cactus', './assets/Platformer/Base pack/Items/cactus.png');
-        this.load.image('plus', './assets/plus.png');
-        this.load.image('minus', './assets/minus.png');
-        this.load.image('multiply', './assets/multiply.png');
-        this.load.image('divide', './assets/divide.png');
-        this.load.image("particle", "./assets/particle.png");
-        this.load.image('exit_sign', './assets/Platformer/Base Pack/Tiles/signExit.png')
-        this.load.image('snow', './assets/White.png');
-        this.load.spritesheet('player', './assets/Platformer/Base pack/Player/p1_spritesheet.png', {
+        this.load.audio('theme', '../assets/HappyLoops/HappyLoops/intro.wav');
+        this.load.audio('plus_sound', '../assets/HappyLoops/Cancel_1.wav');
+        this.load.audio('minus_sound', '../assets/HappyLoops/Confirm_1.wav');
+        this.load.audio('divide_sound', '../assets/HappyLoops/Select_1.wav');
+        this.load.audio('jump_sound', '../assets/HappyLoops/Jump_1.wav');
+        this.load.audio('hit_sound', '../assets/HappyLoops/collect_number.wav');
+        this.load.audio('gate_sound', '../assets/HappyLoops/Open_gate.wav');
+        this.load.image('red', '../assets/red.png');
+        this.load.image('background', '../assets/Platformer/Base pack/bg.png');
+        this.load.image('cloud1', '../assets/Platformer/Base pack/Items/cloud1.png');
+        this.load.image('cloud2', '../assets/Platformer/Base pack/Items/cloud2.png');
+        this.load.image('cloud3', '../assets/Platformer/Base pack/Items/cloud3.png');
+        this.load.image('left', '../assets/Platformer/Base pack/Tiles/grassLeft.png');
+        this.load.image('mid', '../assets/Platformer/Base pack/Tiles/grassMid.png');
+        this.load.image('right', '../assets/Platformer/Base pack/Tiles/grassRight.png');
+        this.load.image('mud', '../assets/Platformer/Base pack/Tiles/grassCenter.png');
+        this.load.image('brown_tall', '../assets/Platformer/Mushroom expansion/PNG/tallShroom_brown.png');
+        this.load.image('red_tall', '../assets/Platformer/Mushroom expansion/PNG/tallShroom_red.png');
+        this.load.image('tan_tall', '../assets/Platformer/Mushroom expansion/PNG/tallShroom_tan.png');
+        this.load.image('brown_short', '../assets/Platformer/Mushroom expansion/PNG/tinyShroom_brown.png');
+        this.load.image('mushroom_bush', '../assets/Platformer/Mushroom expansion/PNG/bush.png');
+        this.load.image('brick_platform', '../assets/Platformer/Base Pack/Tiles/castleHalf.png');
+        this.load.image('small_bricks', '../assets/Platformer/Base Pack/Tiles/brickWall.png');
+        this.load.image('plant', '../assets/Platformer/Base pack/Items/plant.png');
+        this.load.image('cactus', '../assets/Platformer/Base pack/Items/cactus.png');
+        this.load.image('pp_plant', '../assets/Platformer/Base pack/Items/plantPurple.png');
+        this.load.image('bush', '../assets/Platformer/Base pack/Items/bush.png');
+        this.load.image('cactus', '../assets/Platformer/Base pack/Items/cactus.png');
+        this.load.image('plus', '../assets/plus.png');
+        this.load.image('minus', '../assets/minus.png');
+        this.load.image('multiply', '../assets/multiply.png');
+        this.load.image('divide', '../assets/divide.png');
+        this.load.image("particle", "../assets/particle.png");
+        this.load.image('exit_sign', '../assets/Platformer/Base Pack/Tiles/signExit.png')
+        this.load.image('snow', '../assets/White.png');
+        this.load.spritesheet('player', '../assets/Platformer/Base pack/Player/p1_spritesheet.png', {
             frameWidth: 72.57,
             frameHeight: 92
         });
