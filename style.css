@@ -547,7 +547,7 @@ header .right-side-menu .sub-menu a li:hover {
     position: fixed;
     z-index: 1;
     overflow: visible;
-    background-color: rgba(2, 116, 168, 0.8);
+    background-color: rgba(2, 116, 168, 1);
     top: 0;
     left: 0;
 }
