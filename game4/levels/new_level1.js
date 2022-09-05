@@ -103,7 +103,7 @@ class Level_1 extends Phaser.Scene {
         this.load.image("particle", "./assets/particle.png");
         this.load.image('exit_sign', './assets/Platformer/Base pack/Tiles/signExit.png')
         this.load.image('snow', './assets/White.png');
-        this.load.spritesheet('player', './assets/Platformer/Base pack/Player/p1_spritesheet.png', {
+        this.load.spritesheet('player', './assets/Platformer/Base pack/Player/p3_spritesheet.png', {
             frameWidth: 72.57,
             frameHeight: 92
         });
@@ -329,7 +329,7 @@ class Level_1 extends Phaser.Scene {
 
         ball = this.matter.add.sprite(30, 45, "player").setScale(0.8, 0.8); //make player1 body with physics enabled
         ball.fstatic = 1;
-        ball.setTint(0x40C49D);
+        // ball.setTint(0x40C49D);
 
         // create character and animations
         this.anims.create({
