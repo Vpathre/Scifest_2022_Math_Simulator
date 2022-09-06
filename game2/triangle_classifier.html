@@ -3,6 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Math Simulator</title>
+  <link rel="icon" type="image" href="../web_assets/res_icon_white.png">
   <script src="class_def.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
@@ -41,9 +42,11 @@
           <textarea id="editor"></textarea>
         </div>
         <div class="controls">
-          <button onclick="reset_list();" class="int_buttons">Reset</button>
-          <button onclick="render();" style="margin-left: 1.5rem;" class="int_buttons">Run</button>
-          <a href="../index.html"><button style="margin-left: 1.5rem;" class="int_buttons">Exit</button></a>
+          <button style="margin-right:10px;" onclick="reset_list();" id="reset" class="int_buttons">Reset</button>
+          <button style="margin-left:10px;" id='run' onclick="render();" class="int_buttons">Run</button>
+          <a href="../index1.html"><button style="margin-left:1.5rem;" id='exit' class=" int_buttons">Exit</button></a>
+          <a href="https://forms.monday.com/forms/5c1a65a1b64d37703ede92dfc6f1e5ba?r=use1"><button class="int_buttons"
+              style="margin-left: 12rem; margin-top: 1rem;">Rate Your Experience</button></a>
           <h3 class="tri_type">Triangle type (ITO sides)</h3>
           <h2 class="tri_type" id="sides"></h2>
           <h3 class="tri_type">Triangle type (ITO angles)</h3>
@@ -64,17 +67,18 @@
                   background="transparent" speed="1" style="width: 15rem; height: 15rem;" loop autoplay></lottie-player>
               </div>
               <div class="text-container" style=" width: 15rem; position: absolute; right: 3rem;">
-                <p class="story" align="left">Using basic programming notation, draw and modify triangles as you wish!
+                <p class="story" align="left">Using basic programming notation, draw and modify triangles!
                 </p>
                 <p class="story" align="left">Psst! You can drag the corners of the triangle around to see the changes
-                  that occur in it's sides and angles!</p>
+                  in it's sides and angles!</p>
+                <p class="story" align="left"><b>HINT</b>: An example code snippet is provided for you, press the Run
+                  button!
+                </p>
               </div>
-              <!-- <div class="img-container">
-              <img src="assets/alien.png" />
-            </div> -->
             </div>
             </br>
-            <button onclick="document.getElementById('welcome_modal').style.display = 'none';" class="int_buttons">LETS
+            <button onclick="document.getElementById('welcome_modal').style.display = 'none';" class="int_buttons"
+              style="margin-left: 0%;">LETS
               GO!</button>
           </div>
           <div style="display:none;" id="success_part">
@@ -84,13 +88,13 @@
             </lottie-player>
             <br>
             <button onclick="location.reload();" class="int_buttons">Play Again?</button>
-            <a href="../index.html"><button style="margin-left:1.5rem;" class=" int_buttons">Main
+            <a href="../index1.html"><button style="margin-left:1.5rem;" class=" int_buttons">Main
                 Menu</button></a>
           </div>
         </div>
       </div>
     </div>
-    <img class="res_logo" src="assets/resolute-logo.png" />
+    <a href="../index1.html"><img class="res_logo" src="assets/resolute-logo.png" /></a>
     <div style="display:none;" id="error_popup_id" class="error_popup">
       <span onclick="error_window('close');" class="close_x">x</span>
       <p id="err_msg" class="error_text"></p>

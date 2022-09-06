@@ -103,9 +103,31 @@ h3 {
   /* display: inline-block; */
 }
 
+#reset {
+  background-color: #ffbd44;
+  border-color: #ffbd44;
+}
+
+#run {
+  background-color: #00ca4e;
+  border-color: #00ca4e;
+}
+
+#exit {
+  background-color: #ff605c;
+  border-color: #ff605c;
+}
+
 .int_buttons:hover {
   transform: scale(1.1);
   background: darkblue;
+  border: 2px solid oldlace;
+  color: oldlace;
+}
+
+#reset:hover,
+#run:hover,
+#exit:hover {
   border: 2px solid oldlace;
   color: oldlace;
 }
@@ -119,9 +141,26 @@ h3 {
 
 
 body {
-  background-image: url('./assets/background.jpg');
-  background-size: 100%;
+  background: linear-gradient(-45deg, #faad79, #631638, #16072e, #272d4f);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  /* background-image: url('./assets/background.jpg'); */
+  /* background-size: 100%; */
 
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .container {
@@ -232,9 +271,10 @@ body {
   background-color: rgba(7, 9, 13, 0.5);
   right: 30px;
   position: fixed;
-  height: 250px;
+  height: 260px;
   width: 600px;
   top: 400px;
+  padding-top: 0.6rem;
 }
 
 .tri_type {
@@ -246,6 +286,7 @@ body {
 
 #sides,
 #angles {
+  display: inline;
   position: relative;
   left: 42%;
 }

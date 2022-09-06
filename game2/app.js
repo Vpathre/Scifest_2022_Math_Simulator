@@ -52,11 +52,11 @@ document.getElementById("sides").innerHTML = "N/A";
 
 
 
-input.addEventListener("input", (event) => {
-  const value = Number(input.value) / 100;
-  input.style.setProperty("--thumb-rotate", `${value * 720}deg`);
-  label.innerHTML = Math.round(value * 50);
-});
+// input.addEventListener("input", (event) => {
+//   const value = Number(input.value) / 100;
+//   input.style.setProperty("--thumb-rotate", `${value * 720}deg`);
+//   label.innerHTML = Math.round(value * 50);
+// });
 
 // ********************************************************************
 // ********************************************************************

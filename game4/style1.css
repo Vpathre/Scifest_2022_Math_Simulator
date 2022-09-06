@@ -99,11 +99,29 @@ h3 {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.4s;
+    margin-top: 1rem;
     /* display: inline-block; */
 }
 
+#reset_button {
+    background-color: #ffbd44;
+    border-color: #ffbd44;
+}
+
+#exit_button {
+    background-color: #ff605c;
+    border-color: #ff605c;
+}
+
 .int_buttons:hover {
+    transform: scale(1.1);
     background: darkblue;
+    border: 2px solid oldlace;
+    color: oldlace;
+}
+
+#reset_button:hover,
+#exit_button:hover {
     border: 2px solid oldlace;
     color: oldlace;
 }
@@ -117,7 +135,9 @@ h3 {
 
 
 body {
-    background-image: url('./assets/background.jpg');
+    background-image: url('./assets/bg1.jpg');
+    background-size: 105% 120%;
+    background-position: 0px -3rem;
 }
 
 .container {

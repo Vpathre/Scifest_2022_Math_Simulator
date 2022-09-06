@@ -466,6 +466,7 @@ header .right-side-menu .sub-menu a li:hover {
     text-align: center;
     transition: all 0.3s linear;
     border-radius: 2rem;
+    height: 35rem;
 }
 
 .section-third .section-third-task .task-1 h3,
@@ -547,10 +548,10 @@ header .right-side-menu .sub-menu a li:hover {
 }
 
 #loader-wrapper {
-    top: 30%;
+    top: 30rem;
     display: absolute;
-    padding-left: 40%;
-    padding-top: 15%;
+    padding-left: 50rem;
+    padding-top: 15rem;
 }
 
 /* ------------------- our 4th section  css style
@@ -650,7 +651,7 @@ footer .footer-div-5 a {
 
 .icon-bar a {
     width: 18rem;
-    background: #3b5999;
+    background: #b61c1c;
     color: #fff;
     display: flex;
     justify-content: flex-end;
@@ -681,21 +682,6 @@ footer .footer-div-5 a {
     }
 }
 
-.icon-bar .twitter {
-    background: #00aced;
-}
-
-.icon-bar .instagram {
-    background: #e4405f;
-}
-
-.icon-bar .youtube {
-    background: #cd201f;
-}
-
-.icon-bar .linkedin {
-    background: #0077b5;
-}
 
 /* ----------------------------responsive website layout start
    ---------------------------*/

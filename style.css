@@ -547,7 +547,7 @@ header .right-side-menu .sub-menu a li:hover {
     position: fixed;
     z-index: 1;
     overflow: visible;
-    background-color: rgba(2, 116, 168, 1);
+    background-color: rgb(12, 19, 114);
     top: 0;
     left: 0;
 }
@@ -557,91 +557,6 @@ header .right-side-menu .sub-menu a li:hover {
     display: absolute;
     padding-left: 40%;
     padding-top: 15%;
-}
-
-/* ------------------- our 4th section  css style
-  ------------------------------------ */
-
-#section-four .right-side h2 {
-    width: 90rem;
-}
-
-#section-four .left-side img {
-    width: 50rem;
-    height: 70rem;
-    margin: 0;
-}
-
-/* ------------------- our 5th section  css style
-  ------------------------------------ */
-
-#section-five .left-side img {
-    margin: 0;
-}
-
-#section-five .right-side {
-    justify: flex-start;
-    padding-top: 5rem;
-}
-
-#section-five .right-side h2 {
-    width: 63rem;
-    font-weight: 900;
-    font-size: 4rem;
-    line-height: 6.3rem;
-}
-
-#section-five .right-side h3 {
-    text-transform: none;
-}
-
-#section-five .right-side p {
-    height: 3rem;
-}
-
-#section-five .right-side div {
-    margin-bottom: 5rem;
-}
-
-.fa-heart {
-    color: #f75d5d;
-}
-
-/* ------------------- our 6th section Footer css style
-  ------------------------------------ */
-
-footer {
-    width: 100%;
-    background: var(--background-color);
-    height: auto;
-    padding: 5rem 20rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-footer img {
-    width: 13rem;
-    height: 5.5rem;
-}
-
-footer .footer-menu {
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-footer div h4 {
-    font-size: 2rem;
-    text-transform: capitalize;
-}
-
-footer div a {
-    font-size: 1.7rem;
-    line-height: 150%;
-}
-
-footer .footer-div-5 a {
-    font-size: 1.5rem;
 }
 
 /* ------------------- our 7th section social media css style
@@ -656,8 +571,8 @@ footer .footer-div-5 a {
 
 .icon-bar a {
     width: 18rem;
-    background: #3b5999;
-    color: #fff;
+    background: linear-gradient(to bottom, #eecda3 0%, #ef629f 100%);
+    color: rgb(9, 9, 9);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -679,7 +594,7 @@ footer .footer-div-5 a {
 
 @keyframes letszoom {
     from {
-        transform: scale(0.6);
+        transform: scale(0.7);
     }
 
     to {
@@ -687,21 +602,6 @@ footer .footer-div-5 a {
     }
 }
 
-.icon-bar .twitter {
-    background: #00aced;
-}
-
-.icon-bar .instagram {
-    background: #e4405f;
-}
-
-.icon-bar .youtube {
-    background: #cd201f;
-}
-
-.icon-bar .linkedin {
-    background: #0077b5;
-}
 
 /* ----------------------------responsive website layout start
    ---------------------------*/
