@@ -260,14 +260,18 @@ function reset_position() {
 //check hitboxes and report collision
 function check_for_collision() {
   if (rectIntersect(station.x, station.y, station.w, station.h, ship.x, ship.y, ship.w, ship.h)) {
-    document.getElementById("welcome_modal").style.display = "block";
-    document.getElementById("welcome_part").style.display = "none";
-    document.getElementById("success_part").style.display = "block";
+    setTimeout(function () {
+      document.getElementById("welcome_modal").style.display = "block";
+      document.getElementById("welcome_part").style.display = "none";
+      document.getElementById("success_part").style.display = "block";
+    }, 750);
   }
 }
 
 
 //check if hitboxes intersect
+// 1(a) = station
+// 2(b) = ship
 function rectIntersect(x1, y1, w1, h1, x2, y2, w2, h2) {
   if (x2 > w1 / 2 + x1 || x1 > w2 / 2 + x2 || y2 * -1 > h1 / 2 + y1 || y1 * -1 > h2 / 2 + y2) {
     return false;
