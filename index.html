@@ -129,6 +129,7 @@
 
     <script>
         var loader;
+        var timer;
 
         function loadNow(alpha) {
             if (alpha <= 0) {
@@ -147,10 +148,18 @@
         }
 
         document.addEventListener("DOMContentLoaded", function () {
-            setTimeout(function () {
-                loader = document.getElementById('loader');
-                loadNow(1);
-            }, 4850);
+            if (window.sessionStorage.getItem('shown')) {
+                setTimeout(function () {
+                    loader = document.getElementById('loader');
+                    loadNow(1);
+                }, 1);
+            } else {
+                setTimeout(function () {
+                    loader = document.getElementById('loader');
+                    loadNow(1);
+                }, 4850);
+                window.sessionStorage.setItem('shown', true);
+            }
         });
     </script>
 </body>
