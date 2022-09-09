@@ -331,7 +331,11 @@ class Level_1 extends Phaser.Scene {
         ball.flipX = false;
       }
     }
-    if (UP.isDown && ball.body.velocity.y < 1 && ball.body.velocity.y >= -0.1) {
+    if (
+      UP.isDown &&
+      ball.body.velocity.y < 1.25 &&
+      ball.body.velocity.y >= -0.1
+    ) {
       ball.setVelocityY(-10);
       // jump_music.play({
       //     loop: false
